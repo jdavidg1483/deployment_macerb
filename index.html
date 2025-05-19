@@ -9,177 +9,207 @@
     <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class=" py-5 header">
-       <div class="container-xl">
-         <div class="row justify-content-center justify-content-md-between">
-            <div class=" col-8 col-md-3 d-flex align-items-center">
-                <a href="">
-                    <img src="build/img/macerb4.png" class="img-fluid" alt="Logo Macerb">
-                </a>
-               
-            </div>
-            <nav class="col-md-6 d-flex flex-column align-items-center mt-5 mt-md-0 flex-md-row justify-content-md-end navegacion">
-              <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="index.html">Inicio</a>
-              <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="nosotros.html">Nosotros</a>
-              <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="blog.html">Blog</a>
-              <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="tienda.html">Tienda</a>
-            </nav>
-         </div> <!--Row-->
-         <div class="row mt-5">
-            <div class="col-md-6 text-center text-md-start">
-                <h1 class="display-2 fw-bold"><span>#CC</span>TV</h1>
-                
-                <p class="mt-5 fs-5 text-white">
-                    En MACERB, somos expertos en la instalación de sistemas de seguridad, cerco eléctrico, sistemas contra incendios y cableado estructurado de redes. Te ofrecemos soluciones completas y personalizadas para garantizar la seguridad y el buen funcionamiento de tu hogar o empresa.
-                </p>
-              
-                <a class="btn fs-4 bg-primary text-white py-2 px-5" href="catalogo.html">Ver catalogo</a>
-            </div>
-        
-         </div>
-       </div>
-       <img  class="header-camara img-fluid" alt="CCTV" src="build/img/CCTV.webp">
-    </header>
-    <main class="container-xl mt-5">
-     <h2 class="text-center text-color-primary">Nuestros Productos</h2>
-     <div class="row mt-5">
-        <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-          <div class="col-4">
-            <img class="img-fluid" src="build/img/camara-tubo.webp" alt="camara tipo tubo">
+  <header class="py-5 header">
+    <div class="container-xl">
+      <div class="row justify-content-center justify-content-md-between align-items-center">
+        <!-- Logo -->
+        <div class="col-8 col-md-3 d-flex align-items-center">
+          <a href="">
+            <img src="build/img/macerb4.png" class="img-fluid" alt="Logo Macerb">
+          </a>
+        </div>
+  
+        <!-- Navegación y carrito -->
+        <div class="col-md-9 d-flex flex-column flex-md-row align-items-center justify-content-md-end">
+          <nav class="d-flex flex-column flex-md-row align-items-center navegacion">
+            <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="index.html">Inicio</a>
+            <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="nosotros.html">Nosotros</a>
+            <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="blog.html">Blog</a>
+            <a class="d-block px-2 py-1 text-decoration-none fw-bold text-uppercase" href="tienda.html">Tienda</a>
+          </nav>
+  
+          <!-- Carrito alineado a la derecha -->
+          <a href="#" class="position-relative text-white ms-md-4 mt-3 mt-md-0" id="cart-icon">
+            <i class="bi bi-cart-fill fs-3"></i>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cart-count">
+              0
+            </span>
+          </a>
+        </div>
+      </div>
+  
+      <!-- Texto del header -->
+      <div class="row mt-5">
+        <div class="col-md-6 text-center text-md-start">
+          <h1 class="display-2 fw-bold"><span>#Cámaras</span> de Seguridad</h1>
+          <p class="mt-5 fs-5 text-white">
+            En MACERB, somos expertos en la instalación de sistemas de seguridad, cerco eléctrico, sistemas contra incendios y cableado estructurado de redes...
+          </p>
+          <a class="btn fs-4 bg-primary text-white py-2 px-5" href="https://wa.me/51960216637?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener noreferrer">
+            <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="Chat en WhatsApp" /> Chatea con nosotros
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <img class="header-camara img-fluid" alt="CCTV" src="build/img/CCTV.webp">
+  </header>
+
+<div id="loader" class="loader">
+  <div class="ball"></div>
+  <div class="ball"></div>
+  <div class="ball"></div>
+</div>
+
+
+  
+  <main class="container-xl mt-5">
+      <h2 class="text-center text-color-primary">Nuestros Productos</h2>
+      <div class="row mt-5">
+         <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+          <div class="col-4 product-img-zoom">
+            <img class="img-fluid" src="build/img/[CS-C6N-4MP] C6N CAM IP PT IR INT 4MP 2K WIFI 2.jpeg" alt="CS-C6N-4MP">
           </div>
-          <div class="col-8">
-           <h3 class="text-black fs-4 fw-bold text-uppercase">camara tubo</h3>
-           <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-           <p class="fw-black text-primary fs-3">$80</p>
-           <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-          </div>
-        </div> <!--Productos-->
-        <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
+          
+           <div class="col-8">
+            <h3 class="text-black fs-4 fw-bold text-uppercase">CS-C6N-4MP</h3>
+            <p>Camara inteligente para el hogar para el hogar con movimiento horizontal y vertical</p>
+            <p class="fw-black text-primary fs-3"></p>
+            <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/H6c.html">Ver Producto</a>
+           </div>
+         </div> <!--Productos-->
+         <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[CS-H8C-R100-1K2WKFL] CAM IP PT EXT 2MP WIFI 2.png" alt="[CS-H8C-R100-1K2WKFL] CAM IP PT EXT 2MP WIFI 2">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">H8C-R100-1K2WKFL</h3>
+              <p>la cámara H8c es compacta y cuenta con innumerables funciones inteligentes para la protección del hogar</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/h8c.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[ZK-LX14] CONTROL DE ASISTENCIA CON PANTALLA.jpeg" alt="[ZK-LX14] CONTROL DE ASISTENCIA CON PANTALLA 3 ">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">CONTROL DE ASISTENCIA</h3>
+              <p>Control de Asistencia Ahorra tiempo de gestión y asegúrate de tener todo bajo contro</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/zktcolx14.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/HIKVISION_DS-KIS602.jpg" alt="VIDEO INTERCOM KIT VIDEO PORTERO ANALOGICO.">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">KIT VIDEO PORTERO </h3>
+              <p>Videoportero IP  con Llamada y apertura desde APP Hik-Connect  POR CELULARES</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/VIDEOPORTERO.HTML">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[HK-DS7208HGHI-K1(S)] DVR 8CH HD-TVI 1080P 1 HDD C-AUDIO.jpeg" alt="[HK-DS7208HGHI-K1(S)] DVR TURBO HD-TVI 1080P 1 HDD C-AUDIO.">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">DVR TURBO CH 4, 8, 16 Y 32 HD-TVI</h3>
+              <p>Video Grabadores de Hikvision para Cámaras Anlogicas y IP</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/grabadores.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[TP-TL-SF1005D] SWITCH 5P 10-100MBPS.jpeg" alt="[TP-TL-SF1005D] SWITCH 5P 10-100MBPS.">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">TP-LINK-SWITCH 5P</h3>
+              <p>5-Port 10/100Mbps Desktop Switch
+                Power Adapter
+                Installation Guide</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/swirch5p.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[SE-HDD2TB] DISCO DURO PURPLE WD 2 TERAS SATA.jpeg" alt="[SE-HDD2TB] DISCO DURO PURPLE WD SATA.">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">DISCO DURO</h3>
+              <p>Disco Duro 1, 2, 4 y 8 TB Púrpura | Especial para DVR</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/hhdd.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[FZ-FPS-001B] REGLETA NEGRA 6 TOMAS.jpeg" alt="[FZ-FPS-001B] REGLETA NEGRA 6 TOMAS.">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">REGLETA NEGRA 6 TOMAS</h3>
+              <p>Enchufe de tres contactos con conexión a tierra</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/regleta.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[HK-DS-1LN5E-E-E] ROLLO DE CABLE UTP 4 PARES CATEGORIA 5E.jpeg" alt="ROLLO DE CABLE UTP 4 PARES CATEGORIA 5E">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">ROLLO DE CABLE UTP CAT 5e y 6</h3>
+              <p>Diseñado para integradores de seguridad profesional.</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/cableutp.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/[HK-DS2CE16D0T-IRPF] TUBO 4 EN 1 1080P EXT CON IR 20M L2.jpeg" alt="[HK-DS2CE16D0T-IRPF] TUBO 4 EN 1 1080P EXT CON IR 20M L2.">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">Cámara tipo 4 EN 1 1080P EXT </h3>
+              <p>Cámara tipo bala de 2 MP, 4 en 1 1080P Ext con IR 20M L2.8mm - 12VDC</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/camtubo1080p.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
+           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
+             <div class="col-4">
+               <img class="img-fluid" src="build/img/HIKVISION-DS-2CE56DOT-IRPF.jpg" alt="[HK-DS2CE70DF0T-PFS] 2MP DOMO COLORVU LENTE 2.jpeg">
+             </div>
+             <div class="col-8">
+              <h3 class="text-black fs-4 fw-bold text-uppercase">Cámara tipo domo 1080p</h3>
+              <p>Cámara tipo Domo de 2 MP, 4 en 1 1080P Int. con IR 20M L2.8mm - 12VDC</p>
+              <p class="fw-black text-primary fs-3"></p>
+              <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/camDomo1080.html">Ver Producto</a>
+             </div>
+           </div> <!--Productos-->
           <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-          <div class="col-md-6 col-lg-4 my-4 row align-items-center">
-            <div class="col-4">
-              <img class="img-fluid" src="build/img/camara-domo.webp" alt="camara tipo Domo">
-            </div>
-            <div class="col-8">
-             <h3 class="text-black fs-4 fw-bold text-uppercase">camara domo</h3>
-             <p>Camara para vista panoramica brinda una excelente resolucion y un zoom optico 25x</p>
-             <p class="fw-black text-primary fs-3">$80</p>
-             <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="producto.html">Ver Producto</a>
-            </div>
-          </div> <!--Productos-->
-     </div>
-    </main>
+  <div class="col-4">
+    <img class="img-fluid" src="build/img/[HK-DS-1H18S-E] CONVERTIDOR DE VIDEO HD 1CH ENTRADA BNC A UTP (2).jpeg" alt="CONVERTIDOR DE VIDEO HD 1CH ENTRADA BNC A UTP.">
+  </div>
+  <div class="col-8">
+    <h3 class="text-black fs-4 fw-bold text-uppercase">CONVERTIDOR DE VIDEO</h3>
+    <p>Plug and play, transmisión en tiempo real de señal de video CCTV HD estable y de alta calidad</p>
+    <p class="fw-black text-primary fs-3"></p>
+    <a class="bg-primary text-white d-block text-center p-2 text-uppercase fw-black" href="/productos/ballun.html">Ver Producto</a>
+  </div>
+</div>
+
+      </div>
+     </main>
+
 
     <section class="cotiza">
         <div class="container-kl">
@@ -193,60 +223,56 @@
                     #MACERB #Seguridad #Prevención #Redes #Protección #InstalaciónDeSeguridad
                   </p>
 
-                  <a class="btn bg-primary text-white py-3 px-5 mt-2 fw-black text-uppercase" href="#">Mas informacion</a>
+                  <a class="btn bg-primary text-white py-3 px-5 mt-2 fw-black text-uppercase" href="nosotros.html">Mas informacion</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="container-xl mt-5">
-      <h2 class="text-center">Nuestro Blog</h2>
-      <div class="row mt-5">
-        <div class="col-md-6 col-lg-3 mb-4">
+      <h2 class="text-center text-color-primary">Nuestro Blog</h2>
+       <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
           <div class="card">
-            <img src="build/img/CCTV.webp" alt="CCTV" class="card-img-top">
+            <img class="img-fluid w-100" src="build/img/historia_cctv.png" alt="CCTV" class="card-img-top">
             <div class="card-body">
-              <h3 class="text-black fw-normal fs-4">CCTV</h3>
-              <p class="text-primary">28- de Enero de 2025</p>
-              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum tenetur et voluptate, quisquam amet corporis labore! Vitae officia, labore incidunt sint, provident eos vero ad laboriosam, asperiores facilis modi!</p>
-              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada.html">Leer Entrada</a>
+              <h3 class="text-black fw-normal fs-4">Historia del CCTV</h3>
+              <p class="text-primary">8 de Mayo de 2025</p>
+              <p class="text-black">“El primer uso documentado de circuito cerrado de televisión CCTV se produjo en el año 1942 por parte del ejército alemán”.</p>
+              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada/entrada.html">Leer Entrada</a>
             </div>
           </div>
-        </div><!--col-md-6-->
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img src="build/img/CCTV.webp" alt="CCTV" class="card-img-top">
-            <div class="card-body">
-              <h3 class="text-black fw-normal fs-4">CCTV</h3>
-              <p class="text-primary">28- de Enero de 2025</p>
-              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum tenetur et voluptate, quisquam amet corporis labore! Vitae officia, labore incidunt sint, provident eos vero ad laboriosam, asperiores facilis modi!</p>
-              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada.html">Leer Entrada</a>
-            </div>
-          </div>
-        </div><!--col-md-6-->
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="card">
-            <img src="build/img/CCTV.webp" alt="CCTV" class="card-img-top">
-            <div class="card-body">
-              <h3 class="text-black fw-normal fs-4">CCTV</h3>
-              <p class="text-primary">28- de Enero de 2025</p>
-              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum tenetur et voluptate, quisquam amet corporis labore! Vitae officia, labore incidunt sint, provident eos vero ad laboriosam, asperiores facilis modi!</p>
-              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada.html">Leer Entrada</a>
-            </div>
-          </div>
-        </div><!--col-md-6-->
-        <div class="col-md-6 col-lg-3">
-          <div class="card">
-            <img src="build/img/CCTV.webp" alt="CCTV" class="card-img-top">
-            <div class="card-body">
-              <h3 class="text-black fw-normal fs-4">CCTV</h3>
-              <p class="text-primary">28- de Enero de 2025</p>
-              <p class="text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laborum tenetur et voluptate, quisquam amet corporis labore! Vitae officia, labore incidunt sint, provident eos vero ad laboriosam, asperiores facilis modi!</p>
-              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada.html">Leer Entrada</a>
-            </div>
-          </div>
-        </div><!--col-md-6-->
 
-      </div>
+          
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img class="img-fluid w-100" src="build/img/mantenimiento.webp" alt="CCTV" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-black fw-normal fs-4">Óptimo Funcionamiento</h3>
+              <p class="text-primary">19 de Mayo de 2025</p>
+              <p class="text-black">El mantenimiento de cámaras de seguridad es esencial para garantizar su correcto funcionamiento y una vigilancia efectiva.</p>
+              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada/blog3.html">Leer Entrada</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <div class="card">
+            <img class="img-fluid w-100" src="build/img/usoeficazcctv.webp" alt="Uso Eficaz del CCTV" class="card-img-top">
+            <div class="card-body">
+              <h3 class="text-black fw-normal fs-4">Uso Eficaz del CCTV</h3>
+              <p class="text-primary">8 de Mayo de 2025</p>
+              <p class="text-black">“Las cámaras de seguridad son clave para proteger espacios; deben estar bien ubicadas, con buen almacenamiento y mantenimiento”.</p>
+              <a class="btn btn-primary d-block text-white text-uppercase fs-6 mt-4" href="entrada/blog2.html">Leer Entrada</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+     </div>
+    
     </section>
     <footer class=" footer bg-dark mt-5 py-5">
       <div class="container-xl d-md-flex justify-content-md-between">
@@ -256,8 +282,32 @@
            <a class="footer-link text-white fs-4 me-md-2" href="blog.html">Blog</a>
            <a class="text-white fs-4 me-md-2" href="tienda.html">Tienda</a>
         </nav>
-        <p class="text-white text-center fs-4 mt-4 m-md-0">&copy; Macerb SAC, Todos los derechos reservados.</p>
+        <p class="copyright">Macerb, Todos los derechos Reservados <span id="year"></span> &copy;</p>
+
+  
+        
       </div>
     </footer>
+
+   
+ 
+
+  <!-- El resto del contenido de tu página -->
+
+<script>
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    const loader = document.getElementById('loader');
+    loader.style.display = 'none';
+  }, 2000);
+});
+
+</script>
+
+<script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
+
+    
